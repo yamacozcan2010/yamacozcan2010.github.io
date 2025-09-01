@@ -1,1 +1,1 @@
-# yamacozcan2010.github.io
+# yamacozcan
