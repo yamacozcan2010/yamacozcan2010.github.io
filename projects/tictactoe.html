@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Scratch Tic Tac Toe – Yamaç Özcan</title>
+  <link rel="stylesheet" href="../style.css" />
+</head>
+<body>
+  <div class="container">
+    <nav>
+      <a href="../index.html">home</a> |
+      <a href="./">projects</a> |
+      <a href="../resources.html">resources</a>
+    </nav>
+
+    <h1>Scratch Tic Tac Toe</h1>
+
+    <img
+      src="../assets/tictactoe.png"
+      alt="Scratch Tic Tac Toe screenshot"
+      style="width:100%; max-width:900px; border-radius:14px; box-shadow:0 8px 24px rgba(0,0,0,.08); display:block; margin:18px auto;"
+    />
+
+    <h2>Overview</h2>
+    <p>
+      A Scratch Tic Tac Toe with: turn switching between X and O, win detection,
+      victory backdrops, and a 5-second auto reset using broadcasts.
+    </p>
+
+    <h2>How it works</h2>
+    <ul>
+      <li>Global variables: <code>X</code>, <code>O</code>, <code>Draw</code>.</li>
+      <li>Stage controller watches scores in a <code>forever</code> loop.</li>
+      <li>Broadcasts <code>HIDE_ALL</code> and <code>NEW_ROUND</code> to hide/show all squares & UI.</li>
+      <li>Each square resets costume on <code>NEW_ROUND</code>.</li>
+    </ul>
+
+    <p>
+      <a href="./" style="display:inline-block; margin-top:20px; padding:10px 20px; background:#007acc; color:#fff; border-radius:6px; text-decoration:none;">
+        ← Back to Projects
+      </a>
+    </p>
+  </div>
+</body>
+</html>
