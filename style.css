@@ -102,3 +102,18 @@ h2 {
 }
 .video-fallback { text-align: center; margin-top: 8px; }
 
+.gallery { display: grid; gap: 12px; }
+.gallery.two   { grid-template-columns: repeat(2, 1fr); }   
+.gallery.three { grid-template-columns: repeat(3, 1fr); }   
+
+.gallery img {
+  width: 100%;
+  height: auto;         
+  display: block;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,.06);
+}
+
+@media (max-width: 640px) { .gallery.two, .gallery.three { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 420px) { .gallery.two, .gallery.three { grid-template-columns: 1fr; } }
+
